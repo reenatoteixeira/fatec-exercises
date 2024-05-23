@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício 2</title>
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <a href="/">🡨 Voltar</a>
+    </nav>
+
+    <div id="form">
+      <div id="title">
+        <h1>Vendas da sorveteria</h1>
+        <hr>
+        <p>Selecione a quantidade e o tipo do picolé desejado.</p>
+      </div>
+
+      <div class="fieldset-container">
+        <div class="fieldset">
+          <label for="quantity">Quantidade</label>
+          <input type="number" name="quantity" id="quantity" min="0">
+        </div>
+  
+        <div class="fieldset">
+          <label for="type">Tipo do picolé</label>
+          <select name="type" id="type">
+            <option value="0" disabled selected>Selecione</option>
+            <option value="1">Tipo 1</option>
+            <option value="2">Tipo 2</option>
+            <option value="3">Tipo 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fieldset">
+        <button type="button" id="calculateBtn">CALCULAR ✓</button>
+      </div>
+
+      <div id="messageBoard">
+        <div class="fieldset">
+          <label for="quantitySold">Quantidade comprada:</label>
+          <input id="quantitySold" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="popType">Tipo do picolé:</label>
+          <input id="popType" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="popPrice">Preço unitário:</label>
+          <input id="popPrice" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="totalPrice">Total:</label>
+          <input id="totalPrice" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

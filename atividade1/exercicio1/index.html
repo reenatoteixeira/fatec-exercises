@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício 1</title>
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <a href="/">🡨 Voltar</a>
+    </nav>
+
+    <div id="form">
+      <div id="title">
+        <h1>Calculadora de conceito</h1>
+        <hr>
+        <p>Insira o nome e as notas do aluno abaixo para calcular seu conceito.</p>
+      </div>
+
+      <div class="fieldset">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="John Doe">
+      </div>
+
+      <div class="fieldset">
+        <label for="grade1">Nota M1</label>
+        <input type="number" name="grade1" id="grade1" min="0" max="10" placeholder="0 - 10">
+      </div>
+
+      <div class="fieldset">
+        <label for="grade2">Nota M2</label>
+        <input type="number" name="grade2" id="grade2" min="0" max="10" placeholder="0 - 10">
+      </div>
+
+      <div class="fieldset">
+        <button type="button" id="calculateBtn">CALCULAR ✓</button>
+      </div>
+
+      <div id="messageBoard">
+        <div class="fieldset">
+          <label for="actualName">Aluno:</label>
+          <input id="actualName" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="actualGrade1">Nota M1:</label>
+          <input id="actualGrade1" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="actualGrade2">Nota M2:</label>
+          <input id="actualGrade2" readonly>
+        </div>
+
+        <div class="fieldset">
+          <label for="finalGrade">Média:</label>
+          <input id="finalGrade" readonly>
+        </div>
+
+        <span id="result"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
