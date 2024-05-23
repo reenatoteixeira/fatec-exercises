@@ -105,3 +105,17 @@ nav a:hover {
 #messageBoard label {
   color: white;
 }
+
+#sourceCode {
+  color: #4c5a6e;
+  margin-top: 1rem;
+}
+
+#sourceCode a {
+  color: #4c5a6e;
+  transition: background-color 0.2s;
+}
+
+#sourceCode a:hover {
+  color: #64748b;
+}

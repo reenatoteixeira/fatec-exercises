@@ -1,4 +1,4 @@
-Exercício 01 – 2pt:
+# Exercício 01 - Calculadora de conceito – 2pt:
 Crie uma aplicação que receba o nome e duas notas de um aluno.
 As notas vão de zero a dez. O algoritmo deve imprimir o nome do aluno, suas notas e sua média.
 Se a nota for maior que 7 – imprimir “Aprovado”.
