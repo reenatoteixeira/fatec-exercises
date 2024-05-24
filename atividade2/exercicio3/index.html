@@ -15,19 +15,74 @@
       <nav>
         <a href="/">← Voltar</a>
       </nav>
-  
-      <div id="form">
+
+      <form id="form">
         <div id="title">
-          <h1>Ops, exercício ainda não resolvido</h1>
+          <h1>Cadastro de carros</h1>
           <hr>
-          <p>Tente novamente em outro momento</p>
+          <p>Insira os dados do carro para cadastro. Cadastre quantos carros desejar, um por vez.</p>
         </div>
-      </div>
-      
-      <p id="sourceCode">Veja o código fonte <a href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio3" target="_blank">clicando aqui.</a></p>
+
+        <div class="fieldset-container">
+          <div class="fieldset">
+            <label for="brand">Marca</label>
+            <input type="text" name="brand" id="brand" placeholder="Volkswagen">
+          </div>
+
+          <div class="fieldset">
+            <label for="model">Modelo</label>
+            <input type="text" name="model" id="model" placeholder="Gol">
+          </div>
+        </div>
+
+        <div class="fieldset-container">
+          <div class="fieldset">
+            <label for="year">Ano</label>
+            <input type="number" name="year" id="year" min="0" placeholder="2016">
+          </div>
+
+          <div class="fieldset">
+            <label for="usage">Quilometragem</label>
+            <input type="number" name="usage" id="usage" min="0" placeholder="230000">
+          </div>
+        </div>
+
+
+        <div class="fieldset">
+          <button type="reset" id="registerBtn">CADASTRAR ✓</button>
+        </div>
+
+        <div id="messageBoard">
+          <table>
+            <thead>
+              <tr>
+                <th class="tableBrand">Marca</th>
+                <th class="tableModel">Modelo</th>
+                <th class="tableNumber">Ano</th>
+                <th class="tableNumber">KM</th>
+                <th class="tableAvg">KM/ano</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr>
+                <td class="empty-table">Ops! Ainda não há carros cadastrados</td>
+              </tr>
+              <!-- Table rows will be inserted here -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="countSituation">
+          <p>Carros com mais de 100mil KM rodados: <span id="highUsageCars">0</span></p>
+        </div>
+      </form>
+      <p id="sourceCode">Veja o código fonte <a
+          href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio3"
+          target="_blank">clicando aqui.</a></p>
     </div>
   </main>
 
+  <script src="Car.js"></script>
   <script src="main.js"></script>
 </body>
 
