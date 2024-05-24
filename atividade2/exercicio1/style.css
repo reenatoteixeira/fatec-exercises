@@ -62,58 +62,6 @@ nav a:hover {
   border-radius: 0.5rem;
 }
 
-.fieldset-container {
-  display: flex;
-  gap: 1rem;
-}
-
-.fieldset {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.fieldset label {
-  font-size: 0.85rem;
-  margin-bottom: 0.3rem;
-}
-
-.fieldset input,
-.fieldset select {
-  padding: 0.5rem 0.2rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.fieldset button {
-  padding: 0.5rem 0.2rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #3b82f6;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.fieldset button:hover {
-  background-color: #2563eb;
-}
-
-#messageBoard {
-  display: none;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: #64748b;
-  gap: 1rem;
-  border-radius: 0.5rem;
-}
-
-#messageBoard label {
-  color: white;
-}
-
 #sourceCode {
   color: #4c5a6e;
 }

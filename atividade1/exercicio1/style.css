@@ -11,13 +11,25 @@ body {
   background-color: #0f172a;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 nav {
-  margin-bottom: 1rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -35,10 +47,6 @@ nav a {
 
 nav a:hover {
   background-color: #4c5a6e;
-}
-
-#container {
-  max-width: 30%;
 }
 
 #title p {
@@ -126,7 +134,6 @@ nav a:hover {
 
 #sourceCode {
   color: #4c5a6e;
-  margin-top: 1rem;
 }
 
 #sourceCode a {
@@ -136,4 +143,10 @@ nav a:hover {
 
 #sourceCode a:hover {
   color: #64748b;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
 }
