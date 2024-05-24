@@ -1,3 +1,10 @@
-Exercício 01 – 2pt:
-Crie uma aplicação que, dado dois números informados pelo usuário (obrigatoriamente maior
-que zero e menor ou igual a cem), informe qual é o menor deles.
+# Exercício 01 - Número menor – 2pt
+
+Crie uma aplicação que, dado dois números informados pelo usuário informe qual é o menor deles.
+
+### Objetivo
+- Informar qual é o menor número
+
+### Regras de negócio
+- Os números digitados devem ser obrigatoriamente maiores
+que zero e menores ou iguais a cem. 

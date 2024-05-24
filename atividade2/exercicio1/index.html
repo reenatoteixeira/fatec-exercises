@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../assets/svg/note.svg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <title>Atividade 2 | Exercício 1</title>
+  <title>Atividade 1 | Exercício 3</title>
 </head>
 
 <body>
@@ -15,16 +15,38 @@
       <nav>
         <a href="/">← Voltar</a>
       </nav>
-  
-      <div id="form">
+
+      <form id="form">
         <div id="title">
-          <h1>Ops, exercício ainda não resolvido</h1>
+          <h1>Indicador de número menor</h1>
           <hr>
-          <p>Tente novamente em outro momento</p>
+          <p>Digite dois números para verificar qual é o menor.</p>
         </div>
-      </div>
-      
-      <p id="sourceCode">Veja o código fonte <a href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio1" target="_blank">clicando aqui.</a></p>
+
+        <div class="fieldset-container">
+          <div class="fieldset">
+            <label for="number1">1° Número</label>
+            <input type="number" name="number1" id="number1" min="0" max="100" placeholder="0 - 100">
+          </div>
+
+          <div class="fieldset">
+            <label for="number2">2° Número</label>
+            <input type="number" name="number2" id="number2" min="0" max="100" placeholder="0 - 100">
+          </div>
+        </div>
+
+
+        <div class="fieldset">
+          <button type="reset" id="verifyBtn">VERIFICAR ✓</button>
+        </div>
+
+        <div id="messageBoard">
+          <p id="result">Número 1 é menor que 2</p>
+        </div>
+      </form>
+      <p id="sourceCode">Veja o código fonte <a
+          href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio1"
+          target="_blank">clicando aqui.</a></p>
     </div>
   </main>
 
