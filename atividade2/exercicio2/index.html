@@ -15,16 +15,38 @@
       <nav>
         <a href="/">← Voltar</a>
       </nav>
-  
-      <div id="form">
+
+      <form id="form">
         <div id="title">
-          <h1>Ops, exercício ainda não resolvido</h1>
+          <h1>Separador de strings</h1>
           <hr>
-          <p>Tente novamente em outro momento</p>
+          <p>Digite uma palavra para recebê-la formatada com todas as letras separadas por "-".</p>
         </div>
-      </div>
-      
-      <p id="sourceCode">Veja o código fonte <a href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio2" target="_blank">clicando aqui.</a></p>
+
+        <div class="fieldset">
+          <label for="word">Palavra</label>
+          <input type="text" name="word" id="word" min="0" max="100" placeholder="Guaratinguetá">
+        </div>
+
+        <div class="fieldset">
+          <button type="reset" id="formatBtn">FORMATAR ✓</button>
+        </div>
+
+        <div id="messageBoard">
+          <div class="fieldset">
+            <label for="actualWord">Palavra digitada:</label>
+            <input id="actualWord" readonly>
+          </div>
+
+          <div class="fieldset">
+            <label for="formattedWord">String formatada:</label>
+            <input id="formattedWord" readonly>
+          </div>
+        </div>
+      </form>
+      <p id="sourceCode">Veja o código fonte <a
+          href="https://github.com/reenatoteixeira/fatec-exercises/tree/main/atividade2/exercicio2"
+          target="_blank">clicando aqui.</a></p>
     </div>
   </main>
 
