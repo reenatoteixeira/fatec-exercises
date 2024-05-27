@@ -43,7 +43,7 @@ calculateBtn.addEventListener("click", () => {
 
   quantitySold.setAttribute("value", quantity);
   popType.setAttribute("value", type);
-  popPrice.setAttribute("value", "R$" + price.toFixed(2));
-  totalPrice.setAttribute("value", "R$" + total);
+  popPrice.setAttribute("value", `R$${price.toFixed(2)}`);
+  totalPrice.setAttribute("value", `R$${total}`);
   messageBoard.style.display = "flex";
 });
