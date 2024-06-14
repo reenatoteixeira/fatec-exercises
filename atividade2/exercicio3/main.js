@@ -1,10 +1,11 @@
 const registerBtn = document.getElementById("registerBtn"),
   tableBody = document.getElementById("tableBody"),
+  registeredCars = document.getElementById("registeredCars"),
   highUsageCars = document.getElementById("highUsageCars"),
-  actualDate = new Date(),
-  actualYear = actualDate.getFullYear();
+  actualYear = new Date().getFullYear();
 
 let cars = [],
+  registered = 0,
   highUsage = 0;
 
 registerBtn.addEventListener("click", () => {
@@ -25,13 +26,15 @@ registerBtn.addEventListener("click", () => {
     return;
   }
 
-  highUsage = usage > 100000 ? highUsage + 1 : highUsage;
+  highUsage = usage > 100000 ? ++highUsage : highUsage;
+  registered += 1;
 
   let car = new Car(brand, model, year, usage, usageAvg);
 
   cars.push(car);
 
   tableBody.innerHTML = "";
+  registeredCars.innerHTML = registered;
   highUsageCars.innerHTML = highUsage;
 
   cars.forEach((car) => {
